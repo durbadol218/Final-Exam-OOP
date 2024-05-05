@@ -145,8 +145,8 @@ class Admin(basic_account):
         bank.loan_balance()
         print(f"Total Loan Balance: {bank.loan_balance()}")
 
-    def set_Loan_Status(self, status, bank):
-        loan_er_obostha(status, bank)
+    def set_Loan_Status(self, status,bank):
+        bank.loan_er_obostha(status)
         
         
         
@@ -190,6 +190,7 @@ def Admin_World():
         
         elif Option == 7:
             break
+        
         else:
             print("\tINVALID INPUT!")
             
